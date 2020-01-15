@@ -1,0 +1,164 @@
+name: mdc_bhl
+description: 石鱼智采.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.5.5
+
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  dio: ^2.0.15
+  cookie_jar: ^1.0.0
+  path_provider: ^1.2.0
+  cached_network_image: ^2.0.0-rc
+  image_picker: ^0.4.12+1
+  sqflite: ^1.1.5
+  event_bus:  ^1.1.0
+  connectivity: ^0.4.3+1
+  shared_preferences: ^0.5.3+4
+  uuid: ^2.0.1
+  # 推荐使用oktoast，fluttertoast基于原生UI，定制性差
+  oktoast: ^2.1.9
+  # fluttertoast: ^2.1.1
+  flutter_spinkit: "^3.1.0"
+  package_info: ^0.4.0+3
+  camera:
+  url_launcher: ^5.1.1
+  fancy_bottom_navigation: ^0.3.2
+  video_player: ^0.10.1+6
+  #compress image
+  flutter_image_compress: ^0.6.3
+  flutter_cupertino_date_picker: ^1.0.12
+  date_format: 
+  #flutter_video_compress: ^0.3.7+8（不能用）
+#  flutter_webview_plugin: ^0.3.4
+  #日期类
+  # intl: ^0.16.0
+  # thumbnails: ^1.0.1
+  video_thumbnail: ^0.1.5+1
+  table_calendar: ^2.2.1
+  # 日期多选
+  flutter_custom_calendar:
+      git: https://github.com/LXD312569496/flutter_custom_calendar.git
+  # 即时通信
+  signalr_client:
+  provider:
+
+
+  # flutterautotext:
+  #   git: https://github.com/LiuC520/flutterautotext.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+        - images/ic_logo.png
+        - images/ic_head.png
+        - images/ic_add_img.png
+        - images/ic_login_bg.png
+        - images/ic_disposal.png
+        - images/ic_mine_bg.png
+        - images/ic_mine_about.png
+        - images/ic_mine_task.png
+        - images/ic_mine_collect.png
+        - images/ic_mine_report.png
+        - images/ic_mine_setting.png
+        - images/ic_mine_upgrade.png
+        - images/ic_mine_calender.png
+        - images/icon_mine_logout.png
+        - images/no_data.png
+        - images/ic_abnormal.png
+        - images/ic_normal.png
+        - images/ic_not_have.png
+        - images/ic_have.png
+        - images/ic_close.png
+        - images/ic_open.png
+        - images/ic_camera.png
+        - images/ic_input.png
+        - images/ic_temperature.png
+        - images/ic_humidity.png
+        - images/ic_water_level.png
+        - images/splash_bg.png
+        - images/splash_text.png
+        - images/crane.png
+        - images/ic_task_bg.jpg
+        - images/ic_launcher.png
+        - images/no_video.png
+        - images/ic_stable.png
+        - images/icon_date_picker.png
+        - images/circular_water_bg.png
+        - images/ic_water_intake.png
+        - images/ic_water_outake.png
+        - images/ic_water_level_fish.png
+        - images/ic_water_level_degree.png
+        - images/water_level_bg.png
+
+        - assets/images/ic_flutter_devs_logo.png
+        - assets/images/ic_powered_by.png
+        - assets/images/ic_shutter_1.png
+        - assets/images/ic_shutter_2.png
+        - assets/images/ic_switch_camera_3.png
+        - assets/images/ic_no_image.png
+        - assets/images/ic_video.png
+        - assets/images/ic_camera.png
+
+        - assets/mdc_bhl.db
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: font/CustomIcons.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+  module:
+    androidPackage: com.geocompass.bhl
+    iosBundleIdentifier: com.geocompass.bhl
